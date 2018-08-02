@@ -35,7 +35,7 @@ end
 def count_elements(people)
   people_counted = people.uniq!
   people_counted.each do |person|
-    person[:count] = people.count(people.count)
+    person[:count] = people.count(people[:name])
     binding.pry
   end
   people_counted
