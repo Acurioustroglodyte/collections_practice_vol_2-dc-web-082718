@@ -34,7 +34,7 @@ end
 def count_elements(people)
   people_counted = [people].uniq
   people.each do |person|
-    
+    binding.pry
     end
   end
   # Puts people to be returned
