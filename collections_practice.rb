@@ -1,4 +1,5 @@
 require 'pry'
+
 def begins_with_r(elems)
   elems.each do |n|
     if n[0] != "r"
