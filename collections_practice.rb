@@ -33,12 +33,9 @@ def remove_non_strings(elems)
 end
 
 def count_elements(people)
-  binding.pry
   people_counted = people.uniq
-  binding.pry
   people_counted.each do |person|
     person[:count] = people.count(person)
-    binding.pry
   end
   people_counted
 end
