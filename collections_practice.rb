@@ -33,6 +33,7 @@ def remove_non_strings(elems)
 end
 
 def count_elements(people)
+  binding.pru
   people_counted = people.uniq!
   people_counted.each do |person|
     person[:count] = people.count(person)
