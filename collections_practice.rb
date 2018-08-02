@@ -43,9 +43,8 @@ end
  count_elements([{:name => "blake"}, {:name => "blake"}, {:name => "ashley"}])
 
 def merge_data(data1, data2)
-  new_data = data2
-  new_data = data1.collect do |elem|
-    new_data << elem
+  data1.each do |elem|
+    data2 << elem
   end
   binding.pry
   new_data
