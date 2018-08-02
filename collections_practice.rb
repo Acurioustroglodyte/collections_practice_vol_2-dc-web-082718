@@ -43,7 +43,8 @@ end
  count_elements([{:name => "blake"}, {:name => "blake"}, {:name => "ashley"}])
 
 def merge_data(data1, data2)
-  new_data = data1.merge(data2)
+  new_data = data1
+  binding.pry
 end
 
 def find_cool(hashes)
