@@ -34,11 +34,9 @@ end
 
 def count_elements(people)
   people_counted = people.uniq!
-  people.each do |person|
-    binding.pry
+  people_counted.each do |person|
+    person[:count] = people.count(people.count)
   end
-  # Puts people to be returned
-  puts people_counted
   people_counted
 end
 
